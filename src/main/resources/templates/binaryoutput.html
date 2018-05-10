@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Binary Output</title>
+</head>
+<body>
+
+<a href="/">Enter another Decimal number</a>
+
+<div>
+<span th:each="eachDigit:${binary}">
+    <span th:text="${eachDigit}"></span>
+</span>
+</div>
+
+</body>
+</html>

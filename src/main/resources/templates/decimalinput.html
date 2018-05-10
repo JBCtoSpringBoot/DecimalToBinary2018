@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Decimal to Binary</title>
+</head>
+<body>
+    <form action="#" th:action="@{/savedecimal}" th:object="${aDecimal}" method="post">
+        <div>
+            <label> Enter a valid decimal number: </label>
+            <input type="text" th:field="*{decimal}" name="mydecimal">
+            <span th:if="${#fields.hasErrors('decimal')}" th:errors="*{decimal}" ></span>
+
+        </div>
+        <div>
+            <button>Print Binary</button>
+        </div>
+
+    </form>
+</body>
+</html>
